@@ -2,7 +2,6 @@
 
 ask_ai_error() {
   echo "Error: $@" >&2
-  exit 1
 }
 
 ask_ai() {
@@ -11,12 +10,15 @@ ask_ai() {
 
   if [ ! -x "$(which curl)" ] ; then 
     ask_ai_error "curl is not installed"  
+    return
   fi
   if [ ! -x "$(which jq)" ] ; then 
     ask_ai_error "jq is not installed"  
+    return
   fi
   if [ -z "${OPENAI_APIKEY}" ]; then 
     ask_ai_error "Error:  OPENAI_APIKEY is not set or empty" 
+    return
   fi    
 
   echo "${CYAN}Insert question:${NC}"
