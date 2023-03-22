@@ -27,7 +27,7 @@ ask_ai() {
 
   local data
   data='{
-    "prompt": "'$prompt'",
+    "prompt": "give me a cli command to '$prompt'",
     "model": "text-davinci-003",
     "top_p": 1,
     "frequency_penalty": 0,
