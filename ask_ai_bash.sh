@@ -27,7 +27,7 @@ ask_ai() {
 
   local data
   data='{
-    "prompt": "give me a cli command to '$prompt'",
+    "prompt": "assuming bash, give me a cli command to '$prompt'",
     "model": "text-davinci-003",
     "top_p": 1,
     "frequency_penalty": 0,
