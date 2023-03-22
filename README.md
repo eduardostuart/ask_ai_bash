@@ -4,8 +4,6 @@
 
 Open AI Chat-GPT-3 bash script.
 
-> This has only been tested on my machine. So, it might not work everywhere. Works on my machine™️
-
 ## Installation
 
 1. Create an OpenAI api key
